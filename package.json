@@ -1,0 +1,17 @@
+{
+  "name": "@binding-generations/ops-host-deployment",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FeltOS host deployment bundle selecting the ops.bindinggenerations.net MetroPlat instance.",
+  "dependencies": {
+    "@lenticule-science/l-space": "0.2.0",
+    "@emsenn/binding-generations-services-section": "0.1.0",
+    "@red-cup-engineering/metroplat-operations-console": "0.1.0",
+    "@red-cup-engineering/metroplat": "0.9.0",
+    "@red-cup-engineering/feltos-enterprise-host": "0.1.0",
+    "@red-cup-engineering/feltos": "0.18.3",
+    "@red-cup-engineering/farolfi": "0.1.16"
+  },
+  "softwareKind": "deployment"
+}
