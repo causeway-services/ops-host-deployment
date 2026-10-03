@@ -4,7 +4,7 @@ ops.bindinggenerations.net, ops-bindinggenerations.45-76-19-133.sslip.io {
 }
 
 bindinggenerations.net, www.bindinggenerations.net {
-	reverse_proxy https://bindinggenerations-net.morgan-sennhauser.workers.dev {
-		header_up Host bindinggenerations-net.morgan-sennhauser.workers.dev
+	reverse_proxy https://bindinggenerations-net.561-group.workers.dev {
+		header_up Host bindinggenerations-net.561-group.workers.dev
 	}
 }
