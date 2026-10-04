@@ -35,7 +35,8 @@
   "backup": {
     "state": ".local/state/561-group/binding-generations-ops",
     "root": ".local/share/561-group/backups/binding-generations-ops",
-    "keep": 14,
+    "keep": 3,
+    "keepDays": 14,
     "fetchTo": "~/.local/state/561-group/backups/binding-generations-ops"
   },
   "unit": {
