@@ -1,0 +1,17 @@
+[Unit]
+Description=ops.bindinggenerations.net: Binding Generations' FeltOS enterprise operations instance, with its L-Space
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/.local/share/561-group/releases/binding-generations-ops/current/lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/esther-davis-services-section/services/binding-generations-services-section/deployments/binding-generations-ops-host
+Environment=FELTOS_ENTERPRISE_HOST=%h/.local/share/561-group/releases/binding-generations-ops/current/lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/esther-davis-services-section/services/binding-generations-services-section/deployments/binding-generations-ops-host/host.json
+EnvironmentFile=%h/.config/561-group/binding-generations-ops.env
+ExecStart=%h/.nvm/versions/node/v24.16.0/bin/node %h/.local/share/561-group/releases/binding-generations-ops/current/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/services/multi-agent-computer-system-engineering-services-section/services/multi-agent-computer-platform-engineering-services-section/apps/feltos-enterprise-host/scripts/feltos-enterprise-serve.mjs
+Restart=on-failure
+RestartSec=10
+TimeoutStartSec=600
+MemoryHigh=700M
+
+[Install]
+WantedBy=default.target
