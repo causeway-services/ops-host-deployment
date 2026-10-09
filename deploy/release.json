@@ -1,0 +1,46 @@
+{
+  "host": "cold-red-gate",
+  "repository": "emsenn/bare-cedar-fog",
+  "releaseRoot": ".local/share/561-group/releases/binding-generations-ops",
+  "receiptRoot": ".local/state/561-group/binding-generations-ops/releases",
+  "archives": [
+    [
+      ".",
+      ":(exclude,glob)**/content/**",
+      ":(exclude,glob)**/legacy/**",
+      ":(exclude,glob)**/logs/**",
+      ":(exclude,glob)**/data/state/**",
+      ":(exclude,glob)**/data/log/**",
+      ":(exclude,glob)**/test/**",
+      ":(exclude,glob)**/*.png",
+      ":(exclude,glob)**/*.jpg",
+      ":(exclude,glob)**/*.pdf",
+      ":(exclude,glob)**/*.cbor",
+      ":(exclude,glob)**/*.beancount",
+      ":(exclude,glob)**/*.jsonl",
+      ":(exclude,glob)**/*.tsv",
+      ":(exclude,glob)**/*.csv",
+      ":(exclude,glob)**/*.lean",
+      ":(exclude,glob)**/*.py",
+      ":(exclude,glob)**/*.ttl"
+    ],
+    [
+      "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/esther-davis-services-section",
+      ":(glob)**/content/text/documents/templates/**"
+    ]
+  ],
+  "install": "pnpm install --filter '@binding-generations/ops-host-deployment...' --prefer-offline --frozen-lockfile",
+  "restart": "systemctl --user restart binding-generations-ops",
+  "health": "http://127.0.0.1:18817/healthz",
+  "backup": {
+    "state": ".local/state/561-group/binding-generations-ops",
+    "root": ".local/share/561-group/backups/binding-generations-ops",
+    "keep": 3,
+    "keepDays": 14,
+    "fetchTo": "~/.local/state/561-group/backups/binding-generations-ops"
+  },
+  "unit": {
+    "file": "lib/emsenn/services/561-group/services/public-services-section/services/personal-services-section/services/esther-davis-services-section/services/binding-generations-services-section/deployments/binding-generations-ops-host/deploy/binding-generations-ops.service",
+    "name": "binding-generations-ops.service"
+  }
+}
