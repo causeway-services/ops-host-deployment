@@ -9,7 +9,6 @@
     "@561-group/binding-generations-services-section": "workspace:*",
     "@red-cup-engineering/metroplat-operations-console": "workspace:*",
     "@red-cup-engineering/metroplat": "workspace:*",
-    "@red-cup-engineering/feltos-enterprise-host": "workspace:*",
     "@red-cup-engineering/feltos": "workspace:*",
     "@red-cup-engineering/farolfi": "workspace:*"
   },
