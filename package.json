@@ -12,5 +12,9 @@
     "@red-cup-engineering/feltos": "workspace:*",
     "@red-cup-engineering/farolfi": "workspace:*"
   },
-  "softwareKind": "deployment"
+  "softwareKind": "deployment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/causeway-services/ops-host-deployment.git"
+  }
 }
