@@ -1,0 +1,10 @@
+# Appended to cold-red-gate's ~/.config/caddy/Caddyfile.
+ops.bindinggenerations.net, ops-bindinggenerations.45-76-19-133.sslip.io {
+	reverse_proxy 127.0.0.1:18817
+}
+
+bindinggenerations.net, www.bindinggenerations.net {
+	reverse_proxy https://bindinggenerations-net.561-group.workers.dev {
+		header_up Host bindinggenerations-net.561-group.workers.dev
+	}
+}

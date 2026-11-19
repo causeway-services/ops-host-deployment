@@ -1,0 +1,25 @@
+{
+  "name": "@binding-generations/ops-host-deployment",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FeltOS host deployment bundle selecting the ops.bindinggenerations.net MetroPlat instance.",
+  "dependencies": {
+    "@lenticule-science/l-space": "workspace:*",
+    "@561-group/public-binding-generations-services-section": "workspace:*",
+    "@red-cup-engineering/metroplat-operations-console": "workspace:*",
+    "@red-cup-engineering/metroplat": "workspace:*",
+    "@red-cup-engineering/feltos": "workspace:*",
+    "@red-cup-engineering/farolfi": "workspace:*"
+  },
+  "softwareKind": "deployment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/causeway-services/ops-host-deployment.git"
+  },
+  "license": "Apache-2.0",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
+}
